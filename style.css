@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #5a2a27;
+    font-family: "Ubuntu", sans-serif;
+}
+
+h1{
+    margin-top: 15px;
+    font-size: 5rem;
+    text-align: center;
+}
+
+body{
+    background-color: #c4bbaf;
+    text-align: center;
+}
+
+.container{
+    position: relative;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.game{
+    height: 60vmin;
+    width: 65vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    background-color: #a5978b;
+    border-radius: 8%;
+    border: none;
+    color: #5c4742;
+    box-shadow: 0 0 0.3rem rgb(126, 125, 125);
+    font-size: 8vmin;
+}
+
+.reset{
+    width: 30vmin;
+    height: 7vmin;
+    margin-top: 20px;
+    border-radius: 2rem;
+    border: none;
+   background-color: #8d5b4c;
+   /* opacity: 0.9; */
+   color: white;
+}
+
+
+@media (max-width:550px) {
+    h1{
+        margin-top: 70px;
+        font-size: 3rem;
+        padding: 1px;
+    }
+    
+}
+
+@media (max-width:315px) {
+    h1{
+        /* margin-top: 70px; */
+        font-size: 2rem;
+        padding: 4px;
+    }
+    
+}
+
+@media (max-width:415px){
+    .container{
+       
+        padding-top: 30px;
+        align-items: start;
+        justify-content: center;
+        flex-direction: row;
+        
+    }
+    .reset{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+        /* font-size: 0.8rem; */
+        
+    }
+
+    @media (max-width:350px) {
+       .reset{
+        width: 40vmin;
+        height: 10vmin;
+       }
+        
+    }
+    
+
+
+
+}
