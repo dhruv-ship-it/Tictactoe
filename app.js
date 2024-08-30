@@ -1,5 +1,5 @@
 let boxes=document.querySelectorAll(".box")
-let resetBtn=document.querySelectorAll(".reset")
+let resetBtn=document.querySelector(".reset")
 
 let turno=true; //player0 and playerx
 
